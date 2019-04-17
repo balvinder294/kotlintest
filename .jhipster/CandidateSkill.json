@@ -1,0 +1,35 @@
+{
+    "name": "CandidateSkill",
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "skill",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "version",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "experienceInYears",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "experienceInMonths",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712201101",
+    "entityTableName": "candidate_skill",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

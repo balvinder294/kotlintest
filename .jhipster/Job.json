@@ -1,0 +1,57 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "jobName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "companyName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "positionType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobTags",
+            "fieldType": "Set<String>"
+        },
+        {
+            "fieldName": "jobDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "applyUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifiedAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180816085233",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "job",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

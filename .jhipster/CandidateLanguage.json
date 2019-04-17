@@ -1,0 +1,43 @@
+{
+    "name": "CandidateLanguage",
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "languageName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "languageShortName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fluencyLevel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "read",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "write",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "speak",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712200304",
+    "entityTableName": "candidate_language",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

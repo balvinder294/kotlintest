@@ -1,0 +1,6 @@
+{
+  "generator-android-jhi": {
+    "packageName": "com.tekraze.kotlinTest",
+    "appName": "kotlinTest"
+  }
+}

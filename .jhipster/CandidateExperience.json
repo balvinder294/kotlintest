@@ -1,0 +1,67 @@
+{
+    "name": "CandidateExperience",
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "jobTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "company",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isCurrentCompany",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "experienceStartYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "experienceStartMonth",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "experienceEndYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "experienceEndMonth",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "industry",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobRoleDescription",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 4000
+        },
+        {
+            "fieldName": "noticePeriod",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712194713",
+    "entityTableName": "candidate_experience",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

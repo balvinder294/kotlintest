@@ -1,0 +1,105 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "country",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "zipcode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "primaryPhoneNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "alternatePhoneNumbers",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "primaryEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "alternateEmails",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "organisationId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "registeredOn",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "skills",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "teamSize",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "identificationTags",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isRecruiterHavingExistingClients",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "isActive",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "linkedInProfileLink",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdOn",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifiedOn",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180816140426",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "employer",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

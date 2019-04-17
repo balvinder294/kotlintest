@@ -1,0 +1,39 @@
+{
+    "name": "CandidateOnlineProfile",
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "socialProfile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 1000
+        },
+        {
+            "fieldName": "isPublic",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712200559",
+    "entityTableName": "candidate_online_profile",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

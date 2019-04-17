@@ -1,0 +1,31 @@
+{
+    "name": "CandidateCertification",
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "certificationTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "certificationIssuingAuthority",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "certificationYear",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712200603",
+    "entityTableName": "candidate_certification",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

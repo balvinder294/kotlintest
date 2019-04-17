@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "organisationName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ownerId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdOn",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifiedOn",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180816133441",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "organisation",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

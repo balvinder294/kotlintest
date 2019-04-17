@@ -1,0 +1,95 @@
+{
+    "name": "CandidateProject",
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "projectTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projectType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "client",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projectStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projectStartYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projectStartMonth",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isCurentProject",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "projectEndYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projectEndMonth",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projectDescription",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 4000
+        },
+        {
+            "fieldName": "projectLocation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projectSite",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "employmentNature",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "teamSize",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "role",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "roleDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "skills",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isPublic",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712200909",
+    "entityTableName": "candidate_project",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

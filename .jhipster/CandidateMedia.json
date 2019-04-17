@@ -1,0 +1,38 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mediaName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mediaType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fileType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "uploadedOn",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "mediaSize",
+            "fieldType": "Float"
+        }
+    ],
+    "changelogDate": "20180816183350",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "candidate_media",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

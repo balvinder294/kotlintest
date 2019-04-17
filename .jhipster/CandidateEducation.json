@@ -1,0 +1,59 @@
+{
+    "name": "CandidateEducation",
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "education",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "specialization",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "otherSpecialization",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "universityOrInstitute",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "degree",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "otherDegree",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "courseType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "passingOutYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gradingSystem",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gradingSystemValue",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712195921",
+    "entityTableName": "candidate_education",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

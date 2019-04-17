@@ -1,0 +1,55 @@
+{
+    "name": "CandidateWorkSample",
+    "fields": [
+        {
+            "fieldName": "workSampleTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "workSampleStartYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "workSampleStartMonth",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isCurrentWorkSample",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "workSampleEndYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "workSampleEndMonth",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 1000
+        },
+        {
+            "fieldName": "isPublic",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712200600",
+    "entityTableName": "candidate_work_sample",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

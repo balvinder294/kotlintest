@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "providerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "accessToken",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "scope",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tokenExpireTime",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userId",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190328102441",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "social_media_provider",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

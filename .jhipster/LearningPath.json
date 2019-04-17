@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190302124858",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "learning_path",
+    "databaseType": "cassandra",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

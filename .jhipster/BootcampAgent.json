@@ -1,0 +1,13 @@
+./{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [],
+    "changelogDate": "20181208083518",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "no",
+    "entityTableName": "bootcamp_agent",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "userId",
+            "fieldType": "UUID"
+        },
+        {
+            "fieldName": "jobId",
+            "fieldType": "UUID"
+        }
+    ],
+    "changelogDate": "20190302083502",
+    "dto": "mapstruct",
+    "searchEngine": "elasticsearch",
+    "service": "serviceImpl",
+    "entityTableName": "user_job",
+    "databaseType": "cassandra",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

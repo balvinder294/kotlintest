@@ -1,0 +1,123 @@
+{
+    "name": "Candidate",
+    "fields": [
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateOfBirth",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "passportNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "workAuthorisationCategory",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nationality",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "workAuthorisation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "validity",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "experienceLevel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "totalExperienceInYears",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "totalExperienceInMonths",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "currentSalaryCurrency",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currentSalary",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currentSalaryTimeUnit",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "skillTags",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "resumeTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "profileSummary",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "openForPhoneCall",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "openForEmailCommunication",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "isInContract",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "contractClosingDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "resumeFileName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "resumeFileLocation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "resumeFileUploadedOn",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180712193938",
+    "entityTableName": "candidate",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".CandidateDetailActivity">
+
+  <!-- Login progress -->
+  <ProgressBar
+    android:id="@+id/save_progress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:visibility="gone" />
+
+  <ScrollView
+    android:id="@+id/entity_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+      android:id="@+id/Candidate_entity_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_firstName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_firstName"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_lastName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_lastName"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_phoneNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_phoneNumber"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_email"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_dateOfBirth"
+        android:hint="@string/entity_candidate_prompt_dateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+          android:id="@+id/spinner_dateOfBirth"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      </android.support.design.widget.TextInputLayout>
+
+      
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_gender"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_gender"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_passportNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_passportNumber"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_workAuthorisationCategory"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_workAuthorisationCategory"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_nationality"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_nationality"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_workAuthorisation"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_workAuthorisation"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_validity"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_validity"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_experienceLevel"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_experienceLevel"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_totalExperienceInYears"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_totalExperienceInYears"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_totalExperienceInMonths"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_totalExperienceInMonths"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_currentSalaryCurrency"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_currentSalaryCurrency"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_currentSalary"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_currentSalary"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_currentSalaryTimeUnit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_currentSalaryTimeUnit"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_skillTags"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_skillTags"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_resumeTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_resumeTitle"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_profileSummary"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_profileSummary"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_openForPhoneCall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_openForPhoneCall"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_openForEmailCommunication"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_openForEmailCommunication"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_isInContract"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_isInContract"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_contractClosingDate"
+        android:hint="@string/entity_candidate_prompt_contractClosingDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+          android:id="@+id/spinner_contractClosingDate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      </android.support.design.widget.TextInputLayout>
+
+      
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_resumeFileName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_resumeFileName"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_resumeFileLocation"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_candidate_prompt_resumeFileLocation"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_resumeFileUploadedOn"
+        android:hint="@string/entity_candidate_prompt_resumeFileUploadedOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+          android:id="@+id/spinner_resumeFileUploadedOn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      </android.support.design.widget.TextInputLayout>
+
+      
+
+      <Button
+        android:id="@+id/save_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_save"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".JobDetailActivity">
+
+  <!-- Login progress -->
+  <ProgressBar
+    android:id="@+id/save_progress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:visibility="gone" />
+
+  <ScrollView
+    android:id="@+id/entity_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+      android:id="@+id/Job_entity_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_jobName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_job_prompt_jobName"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_companyName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_job_prompt_companyName"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_location"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_job_prompt_location"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_positionType"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_job_prompt_positionType"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_jobTags"
+        android:hint="@string/entity_job_prompt_jobTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+          android:id="@+id/spinner_jobTags"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      </android.support.design.widget.TextInputLayout>
+
+      
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_jobDescription"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_job_prompt_jobDescription"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_applyUrl"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_job_prompt_applyUrl"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_createdBy"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_job_prompt_createdBy"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_createdAt"
+        android:hint="@string/entity_job_prompt_createdAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+          android:id="@+id/spinner_createdAt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      </android.support.design.widget.TextInputLayout>
+
+      
+
+      <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/input_modifiedBy"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/entity_job_prompt_modifiedBy"
+          android:imeActionId="6"
+          android:imeActionLabel="@string/action_save"
+          android:imeOptions="actionUnspecified"
+          android:inputType="text"
+          android:maxLines="1"
+          android:singleLine="true" />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+
+
+      <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_modifiedAt"
+        android:hint="@string/entity_job_prompt_modifiedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+          android:id="@+id/spinner_modifiedAt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1" />
+
+      </android.support.design.widget.TextInputLayout>
+
+      
+
+      <Button
+        android:id="@+id/save_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_save"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>
